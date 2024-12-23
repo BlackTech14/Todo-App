@@ -1,0 +1,88 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  height: 289px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .modal {
+  background-color: #252525;
+  border: 1px solid #F7F7F7;
+
+}
+
+.modal h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dark .modal h2 {
+  color: #fff;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #6c63ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.dark .modal-input {
+  background-color: #252525;
+  border:1px solid #F7F7F7;
+  color: #fff;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto; /* Push buttons to the bottom */
+}
+
+.cancel-button {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #6c63ff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  color: #6c63ff;
+  font-weight: 500;
+}
+
+.dark .cancel-button{
+    background-color: #252525;
+    border: 1px solid #6c63ff;
+    color: #6c63ff;
+}
+.apply-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #6c63ff;
+  color: white;
+  font-weight: 500;
+}
